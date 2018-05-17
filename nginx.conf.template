@@ -30,7 +30,7 @@ http {
         root    /var/www/Keepstar/public;
         index   index.php;
 
-        server_name example.org www.example.org;
+        server_name ${NGINX_HOST};
 
         location / {
             try_files $uri $uri/ /index.php$is_args$args;
