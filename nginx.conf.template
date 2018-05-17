@@ -39,7 +39,7 @@ http {
         location ~ \.php$ {
             try_files $uri /index.php =404;
             include /etc/nginx/fastcgi_params;
-            fastcgi_pass seat-app:9000;
+            fastcgi_pass keepstar-php:9000;
             fastcgi_index index.php;
             fastcgi_param SCRIPT_FILENAME /var/www/Keepstar/public/index.php;
             include fastcgi_params;
